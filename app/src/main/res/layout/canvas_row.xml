@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/canvas_title"
+            android:text="Title"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp"
+            />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/expandableLayout">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Canvas Text:"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="40dp"
+            android:id="@+id/canvas_text_display"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/canvas_text_display"
+            android:layout_marginLeft="5dp"
+            android:id="@+id/canvas_text_edittext"
+            android:layout_marginTop="20dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Canvas Colour:"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="25dp"
+            android:id="@+id/canvas_colour_display"
+            android:layout_below="@id/canvas_text_display"
+
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/canvas_colour_display"
+            android:layout_marginLeft="5dp"
+            android:id="@+id/canvas_colour_edittext"
+            android:layout_marginTop="65dp"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/save_canvas_btn"
+            android:layout_below="@id/canvas_colour_display"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="50dp"
+            android:text="Save"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/delete_canvas_btn"
+            android:layout_below="@id/canvas_colour_display"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="50dp"
+            android:text="Delete"
+            />
+
+    </RelativeLayout>
+
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>
